@@ -1,13 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Auth from './client/components/Auth';
+import Navbar from './client/components/Navbar'
+import Home from './client/components/Home'
+import Insight from './client/components/Insight'
+import Insights from './client/components/Insights'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Auth />
+        <Navbar />
+        <Home />
+        <Insight />
+        <Insights />
       </View>
     );
   }
@@ -16,8 +23,5 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
