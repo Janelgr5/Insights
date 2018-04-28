@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Auth from './client/components/Auth';
-import Navbar from './client/components/Navbar'
-import Home from './client/components/Home'
-import Insight from './client/components/Insight'
-import Insights from './client/components/Insights'
+import Auth from './app/modules/Auth';
+import Navbar from './app/modules/Navbar'
+import Home from './app/modules/Home'
+import Insight from './app/modules/Insight'
+import Insights from './app/modules/Insights'
 
 export default class App extends React.Component {
   render() {
