@@ -4,7 +4,7 @@ import * as actionTypes from './actionTypes';
 
 let initialState = { isLoggedIn: false, user: null };
 
-const authReducer = (state = initialState, action) => {
+const reducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.LOGGED_IN:
             const user = action.data;
@@ -31,4 +31,4 @@ const authReducer = (state = initialState, action) => {
     }
 };
 
-export default authReducer;
+export default reducer;

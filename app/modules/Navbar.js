@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Image, StyleSheet, Button } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
+import { Button } from 'react-native-elements';
 
 export default class Navbar extends Component {
     
@@ -13,6 +14,7 @@ export default class Navbar extends Component {
                 <Button 
                     onPress={() => console.log("logout button pressed")}    
                     title="Logout"
+                    backgroundColor="purple"
                 />
             </View>
         )
